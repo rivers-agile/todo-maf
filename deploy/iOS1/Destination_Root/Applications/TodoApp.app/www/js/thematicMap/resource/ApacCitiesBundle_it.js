@@ -1,0 +1,1 @@
+"use strict";var l={"KOR_SEOUL":[null,"Seul"],"CHN_BEIJING":[null,"Pechino"],"MAC_MACAU":[null,"Macao"],"IND_NEW_DELHI":[null,"Nuova Delhi"],"IDN_JAKARTA":[null,"Giacarta"]};(this?this:window)['DvtBaseMapManager']['_UNPROCESSED_MAPS'][2].push(["apac","cities",l]);

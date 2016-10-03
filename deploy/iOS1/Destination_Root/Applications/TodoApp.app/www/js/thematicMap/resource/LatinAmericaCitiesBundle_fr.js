@@ -1,0 +1,1 @@
+"use strict";var l={"CUB_HAVANA":[null,"La Havane"],"BRA_SAO_PAULO":[null,"S\u00E3o Paulo"],"MEX_MEXICO_CITY":[null,"Mexico"],"DOM_SANTO_DOMINGO":[null,"Saint-Domingue"],"GTM_GUATEMALA_CITY":[null,"Guatemala (ville)"],"PAN_PANAMA_CITY":[null,"Panama (ville)"]};(this?this:window)['DvtBaseMapManager']['_UNPROCESSED_MAPS'][2].push(["latinAmerica","cities",l]);

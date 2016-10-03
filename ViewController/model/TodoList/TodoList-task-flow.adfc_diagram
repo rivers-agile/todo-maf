@@ -3,18 +3,53 @@
    <OverallProperties
       id="OverallProperties1"/>
    <MethodCall
-      id="MethodCall3">
+      id="MethodCall8">
       <property
-         name="activityId">list</property>
+         name="activityId">callTodoService</property>
       <property
-         name="x">135.5</property>
+         name="x">194.5</property>
       <property
          name="start">true</property>
       <property
-         name="description">&lt;html>&lt;p>&lt;b>list&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  Method Call&lt;/p></property>
+         name="description">&lt;html>&lt;p>&lt;b>callTodoService&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  Method Call&lt;/p></property>
       <property
-         name="y">215.23438</property>
+         name="y">135.63672</property>
       <property
          name="exceptionHandler">false</property>
    </MethodCall>
+   <View
+      id="View9">
+      <property
+         name="activityId">todoList</property>
+      <property
+         name="x">468.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>todoList&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">135.60156</property>
+      <property
+         name="page">/todoList.amx</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase10"
+      from="MethodCall8"
+      to="View9">
+      <property
+         name="fromOutcome">displayResults</property>
+      <property
+         name="sdm:polyPoints">R50,235.5,135.63672,427.0,135.53516,L50</property>
+   </ControlFlowCase>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase11"
+      from="View9"
+      to="MethodCall8">
+      <property
+         name="fromOutcome">refreshData</property>
+      <property
+         name="sdm:polyPoints">L54,427.0,139.03516,235.50064,139.07031,R54</property>
+   </ControlFlowCase>
 </SDM>

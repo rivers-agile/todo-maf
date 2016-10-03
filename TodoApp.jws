@@ -114,6 +114,11 @@
                   </hash>
                </list>
             </hash>
+            <hash n="iosDeploymentOptions">
+               <value n="simulatorDeviceId" v="3C640DB3-BBFF-4CF8-88B5-DD2263C501E5"/>
+               <value n="simulatorTarget" v="iPhone 6 (iOS 9.3 - iPhone 6)"/>
+               <value n="targetFamilyVersion" v="iPhone"/>
+            </hash>
             <url n="jarURL" path="deploy/iOS1/iOS1.jar/"/>
             <value n="profileClass" v="oracle.adfmf.framework.dt.deploy.ios.McIosFrameworkProfile"/>
             <value n="profileName" v="iOS1"/>
@@ -198,10 +203,10 @@
          </hash>
       </hash>
       <list n="profileList">
-         <string v="Windows1"/>
+         <string v="Android1"/>
          <string v="iOS1"/>
          <string v="TodoApp_archive"/>
-         <string v="Android1"/>
+         <string v="Windows1"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
@@ -219,7 +224,9 @@
             </hash>
             <hash/>
          </list>
-         <list n="url-path"/>
+         <list n="url-path">
+            <url path="src/"/>
+         </list>
       </hash>
    </hash>
    <hash n="ResourceBundleOptions">
@@ -227,6 +234,7 @@
    </hash>
    <hash n="shared-project-properties">
       <hash n="oracle.jdeveloper.runner.RunConfigurations">
+         <value n="activeName" v="iOS Simulator"/>
          <hash n="runConfigurationDefinitions">
             <hash n="Android Device">
                <hash n="Android_options">
@@ -255,7 +263,8 @@
             <hash n="iOS Simulator">
                <value n="custom" v="false"/>
                <hash n="iOS_options">
-                  <value n="iosSimulatorName" v="iPad Air (iOS 10.0 - iPad Air)"/>
+                  <value n="iosSimulatorDeviceId" v="3C640DB3-BBFF-4CF8-88B5-DD2263C501E5"/>
+                  <value n="iosSimulatorName" v="iPhone 6 (iOS 9.3 - iPhone 6)"/>
                </hash>
                <value n="mobilePlatform" v="iOS"/>
                <value n="name" v="iOS Simulator"/>
@@ -264,10 +273,9 @@
             </hash>
          </hash>
          <list n="runConfigurationList">
-            <string v="Shared"/>
-            <string v="iOS Simulator"/>
-            <string v="Android Emulator"/>
             <string v="Android Device"/>
+            <string v="Android Emulator"/>
+            <string v="iOS Simulator"/>
          </list>
       </hash>
    </hash>

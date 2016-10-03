@@ -1,0 +1,1 @@
+"use strict";var l={"CAN":["CAN","\u05E7\u05E0\u05D3\u05D4"],"USA":["USA","\u05D0\u05E8\u05E6\u05D5\u05EA \u05D4\u05D1\u05E8\u05D9\u05EA"]};(this?this:window)['DvtBaseMapManager']['_UNPROCESSED_MAPS'][2].push(["usaAndCanada","countries",l]);

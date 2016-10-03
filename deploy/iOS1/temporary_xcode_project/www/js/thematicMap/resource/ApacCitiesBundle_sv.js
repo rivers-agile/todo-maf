@@ -1,0 +1,1 @@
+"use strict";var l={"NPL_KATHMANDU":[null,"Katmandu"],"IND_KOLKATA":[null,"Calcutta"],"CHN_BEIJING":[null,"Peking"],"HKG_HONG_KONG":[null,"Hongkong"],"MAC_MACAU":[null,"Macao"],"VNM_HO_CHI_MINH_CITY":[null,"Ho Chi Minh-staden"]};(this?this:window)['DvtBaseMapManager']['_UNPROCESSED_MAPS'][2].push(["apac","cities",l]);
