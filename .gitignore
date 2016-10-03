@@ -1,0 +1,11 @@
+**/deploy/**
+**/classes/**
+**/.data/**
+**/dist/**
+**/stage/**
+Projects/Framework/.data
+Projects/Framework/DesignTime/classes
+Projects/Framework/DesignTime/deploy
+Projects/Framework/Runtime/deploy
+Projects/Framework/stage
+
