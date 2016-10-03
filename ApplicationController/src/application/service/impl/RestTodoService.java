@@ -53,4 +53,11 @@ public class RestTodoService implements TodoService {
             throw new AdfException(e.getLocalizedMessage(), AdfException.ERROR);
         }
     }
+    
+    @Override
+    public CreateTodoResponse create(String content) {
+        Todo todo = new Todo();
+        todo.setContent(content);
+        return create(todo);
+    }
 }
