@@ -1,3 +1,5 @@
+# https://github.com/github/gitignore/blob/master/Global/JDeveloper.gitignore
+
 # default application storage directory used by the IDE Performance Cache feature
 .data/
 
@@ -11,4 +13,8 @@ javadoc/
 
 # lock file, a part of Oracle Credential Store Framework
 cwallet.sso.lck
+
+# MAF specific stuff
+
+**/classes
 
