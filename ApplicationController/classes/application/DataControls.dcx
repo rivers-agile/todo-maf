@@ -32,6 +32,10 @@
                       Definition="application.service.impl.RestTodoService"
                       BeanClass="application.service.impl.RestTodoService"
                       xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <CreatableTypes>
+      <TypeInfo FullName="application.service.ListTodoResponse"/>
+      <TypeInfo FullName="application.service.CreateTodoResponse"/>
+    </CreatableTypes>
     <Source>
       <bean-definition BeanClass="application.service.impl.RestTodoService"
                        DataControlHandler="oracle.adf.model.adapter.bean.DataFilterHandler" AccessMode="scrollable"

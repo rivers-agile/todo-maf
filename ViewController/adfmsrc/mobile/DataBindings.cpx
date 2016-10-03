@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.1.10" id="DataBindings"
+             SeparateXMLFiles="false" Package="mobile" ClientType="Generic">
+  <pageMap>
+    <page path="/TodoList/TodoList-task-flow.xml#TodoList-task-flow@list"
+          usageId="mobile_TodoList_task_flow_TodoList_task_flow_listPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="mobile_TodoList_task_flow_TodoList_task_flow_listPageDef"
+          path="TodoList.TodoList_task_flow_TodoList_task_flow_listPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="TodoService" path="application.TodoService"/>
+  </dataControlUsages>
+</Application>

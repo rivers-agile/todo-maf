@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-mobile-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.0">
+  <task-flow-definition id="TodoList-task-flow">
+    <default-activity>list</default-activity>
+    <method-call id="list">
+      <method>#{bindings.list.execute}</method>
+      <outcome>
+        <fixed-outcome>list</fixed-outcome>
+      </outcome>
+    </method-call>
+    <page-flow-scope-behavior>
+      <push-new/>
+    </page-flow-scope-behavior>
+  </task-flow-definition>
+</adfc-mobile-config>

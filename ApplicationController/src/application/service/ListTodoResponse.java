@@ -3,10 +3,9 @@ package application.service;
 
 import application.model.Todo;
 
-import java.util.Iterator;
 import java.util.List;
 
-public class ListTodoResponse implements Iterable {
+public class ListTodoResponse {
     private Integer totalTodoCount;
     private Integer activeTodoCount;
     private Integer completedTodoCount;
@@ -42,10 +41,5 @@ public class ListTodoResponse implements Iterable {
 
     public List<Todo> getList() {
         return list;
-    }
-
-    @Override
-    public Iterator iterator() {
-        return list.iterator();
     }
 }
