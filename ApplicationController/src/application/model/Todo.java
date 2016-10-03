@@ -21,6 +21,10 @@ public class Todo {
     public Boolean getDone() {
         return done;
     }
+    
+    public Boolean isDone() {
+        return done;
+    }
 
     public void setContent(String content) {
         this.content = content;
