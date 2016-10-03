@@ -17,6 +17,7 @@
         <AttrNames>
           <Item Value="content"/>
           <Item Value="done"/>
+          <Item Value="done"/>
         </AttrNames>
       </nodeDefinition>
     </tree>

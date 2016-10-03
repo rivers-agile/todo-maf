@@ -7,13 +7,13 @@
       <property
          name="activityId">callTodoService</property>
       <property
-         name="x">194.5</property>
+         name="x">186.5</property>
       <property
          name="start">true</property>
       <property
          name="description">&lt;html>&lt;p>&lt;b>callTodoService&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  Method Call&lt;/p></property>
       <property
-         name="y">135.63672</property>
+         name="y">308.3711</property>
       <property
          name="exceptionHandler">false</property>
    </MethodCall>
@@ -22,11 +22,11 @@
       <property
          name="activityId">todoList</property>
       <property
-         name="x">468.0</property>
+         name="x">453.0</property>
       <property
          name="description">&lt;html>&lt;p>&lt;b>todoList&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
       <property
-         name="y">135.60156</property>
+         name="y">308.33594</property>
       <property
          name="page">/todoList.amx</property>
       <property
@@ -40,7 +40,7 @@
       <property
          name="fromOutcome">displayResults</property>
       <property
-         name="sdm:polyPoints">R50,235.5,135.63672,427.0,135.53516,L50</property>
+         name="sdm:polyPoints">R46,227.5,304.8047,411.99933,304.76953,L46</property>
    </ControlFlowCase>
    <ControlFlowCase
       islink="true"
@@ -50,6 +50,31 @@
       <property
          name="fromOutcome">refreshData</property>
       <property
-         name="sdm:polyPoints">L54,427.0,139.03516,235.50064,139.07031,R54</property>
+         name="sdm:polyPoints">L54,412.0,311.76953,227.50067,311.8047,R54</property>
+   </ControlFlowCase>
+   <View
+      id="View12">
+      <property
+         name="activityId">newTodo</property>
+      <property
+         name="x">453.0</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>newTodo&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">117.46875</property>
+      <property
+         name="page">/newTodo.amx</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase7"
+      from="View9"
+      to="View12">
+      <property
+         name="fromOutcome">createTodo</property>
+      <property
+         name="sdm:polyPoints">T50,453.0,254.40234,453.0,171.40234,B50</property>
    </ControlFlowCase>
 </SDM>

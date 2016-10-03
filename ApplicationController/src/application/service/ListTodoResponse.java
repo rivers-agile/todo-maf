@@ -9,7 +9,7 @@ public class ListTodoResponse {
     private Integer totalTodoCount;
     private Integer activeTodoCount;
     private Integer completedTodoCount;
-    private List<Todo> list;
+    private Todo[] list;
 
     public void setTotalTodoCount(Integer totalTodoCount) {
         this.totalTodoCount = totalTodoCount;
@@ -35,11 +35,11 @@ public class ListTodoResponse {
         return completedTodoCount;
     }
 
-    public void setList(List<Todo> list) {
+    public void setList(Todo[] list) {
         this.list = list;
     }
 
-    public List<Todo> getList() {
+    public Todo[] getList() {
         return list;
     }
 }

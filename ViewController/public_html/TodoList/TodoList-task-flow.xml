@@ -11,6 +11,9 @@
     <view id="todoList">
       <page>/todoList.amx</page>
     </view>
+    <view id="newTodo">
+      <page>/newTodo.amx</page>
+    </view>
     <control-flow-rule id="__7">
       <from-activity-id>callTodoService</from-activity-id>
       <control-flow-case id="__8">
@@ -24,6 +27,11 @@
       <control-flow-case id="__10">
         <from-outcome>refreshData</from-outcome>
         <to-activity-id>callTodoService</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__1">
+        <from-outcome>createTodo</from-outcome>
+        <to-activity-id>newTodo</to-activity-id>
+        <transition>slideLeft</transition>
       </control-flow-case>
     </control-flow-rule>
     <page-flow-scope-behavior>

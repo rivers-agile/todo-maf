@@ -3,22 +3,19 @@
           xmlns:dvtm="http://xmlns.oracle.com/adf/mf/amx/dvt">
   <amx:panelPage id="pp1">
     <amx:facet name="header">
-      <amx:outputText value="Header" id="ot1"/>
-    </amx:facet>
-    <amx:facet name="primary">
-      <amx:commandButton id="cb1"/>
+      <amx:outputText value="Todo List" id="ot1"/>
     </amx:facet>
     <amx:facet name="secondary">
-      <amx:commandButton id="cb2"/>
+      <amx:commandButton id="cb1" action="createTodo" text="New" />
     </amx:facet>
-    <amx:listView var="row" value="#{bindings.list1.collectionModel}" fetchSize="#{bindings.list1.rangeSize}"
-                  selectedRowKeys="#{bindings.list1.collectionModel.selectedRow}"
-                  initialScrollRowKeys="#{bindings.list1.collectionModel.selectedRow}"
-                  selectionListener="#{bindings.list1.collectionModel.makeCurrent}" showMoreStrategy="autoScroll"
-                  bufferStrategy="viewport" id="lv1">
-      <amx:listItem id="li1">
-        <amx:outputText value="#{row.content}" id="ot2"/>
-      </amx:listItem>
-    </amx:listView>
+    <amx:refreshContainer id="rc1" action="refreshData" pullText="Pull to refresh..." busyText="Refreshing...">
+      <amx:listView var="row" value="#{bindings.list1.collectionModel}" fetchSize="#{bindings.list1.rangeSize}"
+                    showMoreStrategy="autoScroll" editMode="false"
+                    bufferStrategy="viewport" id="lv2">
+        <amx:listItem id="li2">
+          <amx:outputText value="#{row.content}" id="ot2" inlineStyle="#{row.done ? 'text-decoration:line-through;' : ''}"/>
+        </amx:listItem>
+      </amx:listView>
+    </amx:refreshContainer>
   </amx:panelPage>
 </amx:view>
