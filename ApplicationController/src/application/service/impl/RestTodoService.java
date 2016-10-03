@@ -9,6 +9,7 @@ import application.service.TodoService;
 
 import oracle.adfmf.framework.api.JSONBeanSerializationHelper;
 import oracle.adfmf.framework.exception.AdfException;
+import oracle.adfmf.json.JSONException;
 import oracle.adfmf.json.JSONObject;
 
 import oracle.maf.api.dc.ws.rest.RestServiceAdapter;
@@ -26,6 +27,18 @@ public class RestTodoService implements TodoService {
         restServiceAdapter.addRequestProperty("Content-Type", "application/json");
         restServiceAdapter.addRequestProperty("Accept", "application/json; charset=UTF-8");
         return restServiceAdapter;
+    }
+    
+    private void removeNullsAndTypeFromJSON(JSONObject jsonObj) throws JSONException {
+      jsonObj.remove(".type");
+
+      for (int i = 0; i < jsonObj.length(); i++) {
+        String key = jsonObj.names().getString(i);
+        if (JSONBeanSerializationHelper.isObjectNull(jsonObj.get(key))) {
+          jsonObj.remove(key);
+          i--;
+        }
+      }
     }
 
     @Override
@@ -48,6 +61,7 @@ public class RestTodoService implements TodoService {
 
         try {
             JSONObject requestAsJson = (JSONObject) JSONBeanSerializationHelper.toJSON(todo);
+            removeNullsAndTypeFromJSON(requestAsJson);
             String responseAsJson = restServiceAdapter.send(requestAsJson.toString());
             return (CreateTodoResponse) JSONBeanSerializationHelper.fromJSON(CreateTodoResponse.class, responseAsJson);
         } catch (Exception e) {
