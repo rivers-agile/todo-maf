@@ -1,1 +1,0 @@
-"use strict";var l={"USA_WASHINGTON":[null,"Waszyngton"],"USA_PHILADELPHIA":[null,"Filadelfia"],"USA_NEW_YORK":[null,"Nowy Jork"]};(this?this:window)['DvtBaseMapManager']['_UNPROCESSED_MAPS'][2].push(["usaAndCanada","cities",l]);

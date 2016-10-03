@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.1.10" id="newTodoPageDef"
+                Package="mobile.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables">
+      <variable Type="java.lang.String" Name="create_content" IsQueriable="false"/>
+    </variableIterator>
+    <methodIterator Binds="create.result" DataControl="TodoService" RangeSize="25"
+                    BeanClass="application.service.CreateTodoResponse" id="createIterator"/>
+  </executables>
+  <bindings>
+    <methodAction id="create" RequiresUpdateModel="true" Action="invokeMethod" MethodName="create"
+                  IsViewObjectMethod="false" DataControl="TodoService" InstanceName="data.TodoService.dataProvider"
+                  ReturnName="data.TodoService.methodResults.create_TodoService_dataProvider_create_result">
+      <NamedData NDName="content" NDType="java.lang.String" NDValue="${bindings.create_content}"/>
+    </methodAction>
+    <attributeValues IterBinding="variables" id="content">
+      <AttrNames>
+        <Item Value="create_content"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

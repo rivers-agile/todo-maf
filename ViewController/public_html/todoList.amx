@@ -11,8 +11,8 @@
     <amx:refreshContainer id="rc1" action="refreshData" pullText="Pull to refresh..." busyText="Refreshing...">
       <amx:listView var="row" value="#{bindings.list1.collectionModel}" fetchSize="#{bindings.list1.rangeSize}"
                     showMoreStrategy="autoScroll" editMode="false"
-                    bufferStrategy="viewport" id="lv2">
-        <amx:listItem id="li2">
+                    bufferStrategy="viewport" id="lv2" sectionIndex="off" layout="rows">
+        <amx:listItem id="li2" showLinkIcon="false">
           <amx:outputText value="#{row.content}" id="ot2" inlineStyle="#{row.done ? 'text-decoration:line-through;' : ''}"/>
         </amx:listItem>
       </amx:listView>

@@ -9,11 +9,13 @@
       <amx:commandButton id="cb1" text="Back" action="__back" />
     </amx:facet>
     <amx:facet name="secondary">
-      <amx:commandButton id="cb2" text="Save" />
+    <amx:commandButton actionListener="#{bindings.create.execute}" text="Create"
+                       action="getNewData"
+                       disabled="#{!bindings.create.enabled}" id="cb3"/>
     </amx:facet>
     <amx:panelFormLayout id="pfl1" labelPosition="topStart" fieldHalign="start">
-      <amx:inputText label="What needs done?" id="it1" inputType="text" rows="1" required="true"
-                     inlineStyle="text-align:left;"/>
+      <amx:inputText value="#{bindings.content.inputValue}" label="What needs done?" id="it1" 
+                     inputType="text" rows="1" required="true" inlineStyle="text-align:left;"/>
     </amx:panelFormLayout>
   </amx:panelPage>
 </amx:view>

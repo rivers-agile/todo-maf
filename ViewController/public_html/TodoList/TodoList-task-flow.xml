@@ -34,6 +34,14 @@
         <transition>slideLeft</transition>
       </control-flow-case>
     </control-flow-rule>
+    <control-flow-rule id="__2">
+      <from-activity-id>newTodo</from-activity-id>
+      <control-flow-case id="__3">
+        <from-outcome>getNewData</from-outcome>
+        <to-activity-id>callTodoService</to-activity-id>
+        <transition>slideRight</transition>
+      </control-flow-case>
+    </control-flow-rule>
     <page-flow-scope-behavior>
       <push-new/>
     </page-flow-scope-behavior>

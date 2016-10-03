@@ -1,1 +1,0 @@
-/Users/chachi/Documents/Rivers/todo-maf/deploy/iOS1/Destination_Root/Applications/TodoApp.app

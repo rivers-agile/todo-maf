@@ -17,4 +17,5 @@ cwallet.sso.lck
 # MAF specific stuff
 
 **/classes
+**/deploy
 

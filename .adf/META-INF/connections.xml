@@ -4,7 +4,7 @@
     <RefAddresses>
       <XmlRefAddr addrType="TodoAPI">
         <Contents>
-          <restconnection name="TodoAPI" url="https://hapitodo.herokuapp.com/api/v1"/>
+          <restconnection name="TodoAPI" url="http://localhost:8888/api/v1"/>
         </Contents>
       </XmlRefAddr>
     </RefAddresses>

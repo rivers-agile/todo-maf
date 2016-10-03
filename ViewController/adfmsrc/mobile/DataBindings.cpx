@@ -7,6 +7,7 @@
     <page path="/todoList.amx" usageId="mobile_todoListPageDef"/>
     <page path="/TodoList/TodoList-task-flow.xml#TodoList-task-flow@callTodoService"
           usageId="mobile_TodoList_task_flow_TodoList_task_flow_listPageDef"/>
+    <page path="/newTodo.amx" usageId="mobile_newTodoPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="mobile_todoList_task_flow_todoList_task_flow_listPageDef"
@@ -14,6 +15,7 @@
     <page id="mobile_todoListPageDef" path="mobile.pageDefs.todoListPageDef"/>
     <page id="mobile_TodoList_task_flow_TodoList_task_flow_listPageDef"
           path="TodoList.TodoList_task_flow_TodoList_task_flow_listPageDef"/>
+    <page id="mobile_newTodoPageDef" path="mobile.pageDefs.newTodoPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <dc id="TodoService" path="application.TodoService"/>

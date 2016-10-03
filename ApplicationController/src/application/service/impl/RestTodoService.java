@@ -48,8 +48,7 @@ public class RestTodoService implements TodoService {
 
         try {
             String responseAsJson = restServiceAdapter.send("");
-            ListTodoResponse response = (ListTodoResponse) JSONBeanSerializationHelper.fromJSON(ListTodoResponse.class, responseAsJson);
-            return response;
+            return (ListTodoResponse) JSONBeanSerializationHelper.fromJSON(ListTodoResponse.class, responseAsJson);
         } catch (Exception e) {
             throw new AdfException(e.getLocalizedMessage(), AdfException.ERROR);
         }
